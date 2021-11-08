@@ -4,6 +4,7 @@ import { CARD } from "../constants/game";
 import { GAME_ACTION } from "../redux/modules/game/gameReducer";
 import Card from "./Card";
 import "./Game.scss";
+import GameNotification from "./GameNotification";
 
 const Game = (props) => {
   const dispatch = useDispatch();
@@ -50,7 +51,8 @@ const Game = (props) => {
   }, [turnStatus]);
 
   return (
-    <div>
+    <React.Fragment>
+      <GameNotification/>
       <div
         className=" p-8 bg-white rounded-3xl shadow-xl relative"
         style={{ ...getBoardSize() }}
@@ -66,7 +68,7 @@ const Game = (props) => {
           ></Card>
         ))}
       </div>
-    </div>
+    </React.Fragment>
   );
 };
 

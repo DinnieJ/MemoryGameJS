@@ -10,6 +10,7 @@ import { store } from "./redux";
 import Navbar from "./components/Navbar";
 import Menu from "./components/Menu";
 import Single from "./pages/single";
+import MultiPage from "./pages/multi";
 
 function App() {
   document.title = "MemoryJS"
@@ -24,6 +25,9 @@ function App() {
             </Route>
             <Route path="/single">
               <Single/>
+            </Route>
+            <Route path="/multi">
+              <MultiPage/>
             </Route>
           </Switch>
         </Router>

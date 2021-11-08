@@ -22,6 +22,7 @@ const GAME_ACTION = {
     RESET_CARD: 'GA3',
     SET_DIFFICULTY: 'CB1',
     SHOW_ALL_CARD: 'GA4',
+    RESET_STATE: 'GA5'
 }
 
 const gameReducer = (state = initState, action) => {
@@ -158,6 +159,11 @@ const gameReducer = (state = initState, action) => {
                 ...state,
                 map: cMap,
                 showAllCards: action.payload.show
+            }
+
+        case GAME_ACTION.RESET_STATE:
+            return {
+                ...initState
             }
         default:
             return state

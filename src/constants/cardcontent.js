@@ -1,4 +1,4 @@
-import { faAddressBook, faAddressCard, faAllergies, faAmbulance, faArchway, faArrowAltCircleDown, faBacon, faBaseballBall, faBatteryFull, faBlenderPhone, faBus, faCalculator, faCamera, faCoffee, faDiceFive, faDiceFour, faDiceOne, faDiceSix, faDiceThree, faDiceTwo, faEyeDropper, faFemale, faFrown, faGamepad, faLightbulb, faMale, faMeh, faQuestion, faSmile, faUser, faUserMd, faUserNinja, faUserNurse, faUserSlash, faUserTie } from '@fortawesome/free-solid-svg-icons'
+import { faAddressBook, faAddressCard, faAllergies, faAmbulance, faArchway, faArrowAltCircleDown, faBacon, faBaseballBall, faBatteryFull, faBlenderPhone, faBraille, faBus, faCalculator, faCamera, faCoffee, faDiceFive, faDiceFour, faDiceOne, faDiceSix, faDiceThree, faDiceTwo, faEyeDropper, faFemale, faFrown, faGamepad, faLightbulb, faMale, faMeh, faQuestion, faSmile, faUser, faUserMd, faUserNinja, faUserNurse, faUserSlash, faUserTie } from '@fortawesome/free-solid-svg-icons'
 
 const ICONS = [
     faCoffee,
@@ -16,7 +16,8 @@ const ICONS = [
     faCamera,
     faBacon,
     faBatteryFull,
-    faArchway
+    faArchway,
+    faBraille
 ]
 
 const HARD_MODE_ICONS = [
